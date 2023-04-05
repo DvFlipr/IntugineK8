@@ -1,0 +1,32 @@
+sizes_test: 1
+cluster_name: "flipr-intugine-dev"
+VPC_NAME: "flipr-intugine-vpc"
+vpc_cidr: "10.0.0.0/16"
+vpc_private_subnets:
+  - 10.0.1.0/24
+  - 10.0.2.0/24
+  - 10.0.3.0/24
+vpc_public_subnets:
+  - 10.0.4.0/24
+  - 10.0.5.0/24
+  - 10.0.6.0/24
+region: us-east-1
+cluster_vrsn: 1.24
+eks_node_groups:
+  - name: "node-group-1"
+    instance_types:
+      - "t3.micro"
+    min_size: 1
+    max_size: 3
+    desired_size: 2
+  - name: "node-group-2"
+    instance_types:
+      - "t2.micro"
+    min_size: 1
+    max_size: 3
+    desired_size: 1
+cluster_endpoint_public_access: true
+ami_type: "AL2_x86_64"
+vpc_enable_nat_gateway   : true
+vpc_single_nat_gateway   : true
+vpc_enable_dns_hostnames : true
