@@ -1,0 +1,32 @@
+region: "us-east-1"
+cluster_name: "flipr-intugine-devtest1"
+vpc_id: "vpc-0a11526bf4234f7eb"
+environment: "random-data"
+subnet_cidr_blocks_public:
+  - 10.0.17.0/24
+  - 10.0.18.0/24
+  - 10.0.19.0/24
+subnet_cidr_blocks_private:
+  - 10.0.20.0/24
+  - 10.0.21.0/24
+  - 10.0.22.0/24
+availability_zones:
+  - us-east-1a
+  - us-east-1b
+  - us-east-1c
+region: us-east-1
+cluster_vrsn: 1.24
+eks_node_groups:
+  - name: "node-group-1"
+    instance_types:
+      - "m3.large"
+    min_size: 2
+    max_size: 2
+    desired_size: 2
+cluster_endpoint_public_access: true
+ami_type: "AL2_x86_64"
+vpc_enable_nat_gateway   : true
+vpc_single_nat_gateway   : true
+vpc_enable_dns_hostnames : true
+public_rttable_id: "rtb-0f46b8905ea3ab28c"
+private_rttable_id: "rtb-05a4061b8badef774"

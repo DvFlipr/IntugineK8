@@ -1,0 +1,2 @@
+Admin:
+  - "arn:aws:iam::940621196142:user/testAdminUser"

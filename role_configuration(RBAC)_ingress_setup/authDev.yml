@@ -1,0 +1,13 @@
+Dev:
+  - id: "0"
+    iam: "arn:aws:iam::940621196142:user/apurva"
+    namespace: "prod"
+  - id: "1"
+    iam: "arn:aws:iam::940621196142:user/testDevUser"
+    namespace: "intracity"
+  - id: "2"
+    iam: "arn:aws:iam::940621196142:user/DevopsUser"
+    namespace: "devops"
+  - id: "3"
+    iam: "arn:aws:iam::940621196142:user/DevopsUser"
+    namespace: "prod"

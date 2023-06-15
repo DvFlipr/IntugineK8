@@ -1,0 +1,7 @@
+namespaces:
+  - "prod"
+  - "intracity"
+  - "newspace"
+  - "devops"
+  - "ingress"
+  - "cert-manager"
